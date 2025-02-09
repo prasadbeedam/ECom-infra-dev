@@ -1,7 +1,8 @@
 module "vpc" {
-    source = "../../roboshop-infra-dev/00-vpc"
-    #source = "https://github.com/prasadbeedam/roboshop-infra-dev.git?ref=main"
+    source = "git::https://github.com/daws-81s/terraform-aws-vpc.git?ref=main"
+    vpc_cidr = var.vpc_cidr
     project_name = var.project_name
+    environment = var.environment
     common_tags = var.common_tags
     public_subnet_cidrs = var.public_subnet_cidrs
     private_subnet_cidrs = var.private_subnet_cidrs
