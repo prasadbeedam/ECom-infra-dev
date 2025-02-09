@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "ecom-dev"
-    key    = "ecom-vpc"
+    key    = "ecom-sg"
     region = "us-east-1"
     dynamodb_table = "ecom-locking-dev"
   }
