@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "../roboshop-infra-dev"
+    source = "../../roboshop-infra-dev/00-vpc"
     #source = "https://github.com/prasadbeedam/roboshop-infra-dev.git?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
