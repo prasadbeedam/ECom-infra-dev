@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "roboshop-dev"
-    key    = "roboshop-bastion"
+    bucket = "ecom-dev"
+    key    = "ecom-bastion"
     region = "us-east-1"
-    dynamodb_table = "roboshop-locking-dev"
+    dynamodb_table = "ecom-locking-dev"
   }
 }
 
